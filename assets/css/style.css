@@ -1,0 +1,14 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/08/30/15/09/wood-1631025_1280.jpg");
+    font-family: 'Diplomata SC', cursive;
+}
+.navbar{
+    font-family: 'Inconsolata', monospace;
+    border: right, 3px;
+
+}
+.jumbotron{
+ /* make jumbotron slightly transparent */
+ background: rgba(255,255,255,0.5); 
+ /* // or hsla(0, 0%, 100%, 0.5) */
+}
