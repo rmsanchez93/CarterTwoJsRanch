@@ -77,7 +77,7 @@ h1, p{
 }
 
 #para2{
-    background-image: url('./assets/deer.jpeg');
+    background-image: url('./assets/imgs/deer.jpeg');
 }
 .linkcontainer{
    margin-top: 30px;
@@ -137,7 +137,7 @@ h1, p{
 
 
 .intro{
-    background-image: url("./assets/image.png");    
+    background-image: url("./assets/imgs/image.png");    
 }
 
 .container{
@@ -188,10 +188,10 @@ h1, p{
 
 
 @keyframes example {
-    0%   {background-image: url('./assets/deer.jpeg');}
-    25%  {background-image: url('./assets//Lake.jpg');}
-    50%  {background-image: url('./assets/accomodations.jpeg');}
-    100% {background-image: url('./assets/Lake.jpg');}
+    0%   {background-image: url('./assets/imgs/deer.jpeg');}
+    25%  {background-image: url('./assets/imgs/Lake.jpg');}
+    50%  {background-image: url('./assets/imgs/accomodations.jpeg');}
+    100% {background-image: url('./assets/imgs/Lake.jpg');}
   }
   
   /* The element to apply the animation to */
