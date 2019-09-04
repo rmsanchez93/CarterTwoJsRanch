@@ -189,7 +189,7 @@ h1, p{
 
 @keyframes example {
     0%   {background-image: url('./assets/imgs/deer.jpeg');}
-    25%  {background-image: url('./assets/imgs/Lake.jpg');}
+    25%  {background-image: url('./assets/imgs/carterspictures/deer-looking-feeder.JPG');}
     50%  {background-image: url('./assets/imgs/accomodations.jpeg');}
     100% {background-image: url('./assets/imgs/Lake.jpg');}
   }
@@ -200,5 +200,5 @@ h1, p{
     height: 100vh;
     /* background-color: red; */
     animation-name: example;
-    animation-duration: 10s;
+    animation-duration: 15s;
   }
