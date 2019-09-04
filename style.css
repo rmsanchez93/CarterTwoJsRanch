@@ -31,7 +31,7 @@ h1, p{
 
 #about{
     background-color: black;
-    background-image: url("./assets/image.png");    
+    background-image: url("./assets/imgs/image.png");    
 
 
 }
@@ -71,7 +71,7 @@ h1, p{
 
 
 .para1{
-    background-image: url("./assets/Lake.jpg");
+    background-image: url("./assets/imgs/Lake.jpg");
     overflow: hidden;
 
 }
