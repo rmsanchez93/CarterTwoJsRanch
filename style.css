@@ -54,18 +54,30 @@ h1, p{
     /* padding: 5px; */
 }
 #gallery{
-    background-image: url('./assets/carterspictures/murashkame-cBw5Fis0sw8-unsplash.jpg');
+    background-image: url('./assets/imgs/carterspictures/murashkame-cBw5Fis0sw8-unsplash.jpg');
     position: relative;
 }
-.gallery{
+.gallery-headline{
     position: absolute;
     height: 10%;
     line-height: 10%;
-    /* text-align: center; */
+    text-align: center;
     padding: 20px;
     top: 10%;
     width: 100%;
     background-color: rgba(0,0,0,0.6);
+}
+.gallery-container{
+    max-width: 100%;
+    display: flex;
+    background: black;
+    color: #faebd7;
+    height: 40vh;
+    position: relative;
+    top: 40vh;
+}
+.gallery-select{
+    flex:1;
 }
 #prices{
     /* background-image: url('./assets/carterspictures/deer-looking-feeder.JPG') */
