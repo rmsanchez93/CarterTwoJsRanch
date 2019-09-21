@@ -2,6 +2,15 @@ html{
     /* master scrolling */
     scroll-behavior: smooth; 
 }
+/* fix overflow for mobile */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 
 
 h1, p{
@@ -31,7 +40,7 @@ h1, p{
 
 #about{
     background-color: black;
-    background-image: url("./assets/imgs/image.png");    
+    background-image: url("./assets/image.png");    
 
 
 }
@@ -45,7 +54,7 @@ h1, p{
     /* padding: 5px; */
 }
 #gallery{
-    background-image: url('./assets/imgs/carterspictures/murashkame-cBw5Fis0sw8-unsplash.jpg');
+    background-image: url('./assets/carterspictures/murashkame-cBw5Fis0sw8-unsplash.jpg');
     position: relative;
 }
 .gallery{
@@ -71,7 +80,7 @@ h1, p{
 
 
 .para1{
-    background-image: url("./assets/imgs/Lake.jpg");
+    background-image: url("./assets/imgs/carterspictures/deer-family.JPG");
     overflow: hidden;
 
 }
@@ -113,14 +122,16 @@ h1, p{
 
 
 .headline-container{
-    background: rgba(0,0,0,0.6);
-    width: 50%;
+    background: rgba(0,0,0,0.4);
+    width: 35%;
     display: inline-block;
     padding:5%;
     margin-top: 10%;
+    margin-left: 30%;
     /* margin-right: 15%;  */
     color: white;
-    font-size: 20vh;
+    font-size: 10vh;
+    /* text-align: center; */
     /* transition-delay: 2s; */
 
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
@@ -131,13 +142,13 @@ h1, p{
 }
 
 .headline {
-    text-align: left
+    text-align: center
 }
 
 
 
 .intro{
-    background-image: url("./assets/imgs/image.png");    
+    background-image: url("./assets/image.png");    
 }
 
 .container{
@@ -188,10 +199,10 @@ h1, p{
 
 
 @keyframes example {
-    0%   {background-image: url('./assets/imgs/deer.jpeg');}
-    25%  {background-image: url('./assets/imgs/carterspictures/deer-looking-feeder.JPG');}
-    50%  {background-image: url('./assets/imgs/accomodations.jpeg');}
-    100% {background-image: url('./assets/imgs/Lake.jpg');}
+    0%   {background-image: url('./assets/imgs/accomodations.jpeg');}
+    25%  {background-image: url('./assets/imgs/carterspictures/blackbuck.JPG');}
+    50%  {background-image: url('./assets/imgs/carterspictures/deer-drinking.JPG');}
+    100% {background-image: url('./assets/imgs/carterspictures/deer-looking-feeder.JPG');}
   }
   
   /* The element to apply the animation to */
@@ -200,5 +211,5 @@ h1, p{
     height: 100vh;
     /* background-color: red; */
     animation-name: example;
-    animation-duration: 15s;
+    animation-duration: 10s;
   }
