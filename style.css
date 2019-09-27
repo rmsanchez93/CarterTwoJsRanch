@@ -92,7 +92,7 @@ h1, p{
 
 
 .para1{
-    background-image: url("./assets/imgs/carterspictures/deer-family.JPG");
+    background-image: url("./assets/imgs/mobile/deer-family-resize.png");
     overflow: hidden;
 
 }
@@ -101,12 +101,14 @@ h1, p{
     background-image: url('./assets/imgs/deer.jpeg');
 }
 .linkcontainer{
+   height: auto;
    margin-top: 30px;
    font-family: 'Courier New', Courier, monospace;
    font-weight: 300;
    display: flex;
-   justify-content: space-between;   
-   width: 100%;
+   justify-content: center;
+   /* width: 100%; */
+   line-height: normal;
    
 }
 
@@ -114,9 +116,11 @@ h1, p{
     text-decoration: none;
     background: rgba(0,0,0,0.6);
     color:white;
-    font-size: 20px;
+    font-size: 14px;
     margin: 5px;
-    padding: none;
+    padding: 5px;
+    height: 20px;
+    flex:1;
 }
 
 
@@ -135,7 +139,7 @@ h1, p{
 
 .headline-container{
     background: rgba(0,0,0,0.4);
-    width: 35%;
+    width: 44%;
     display: inline-block;
     padding:5%;
     margin-top: 10%;
@@ -224,4 +228,13 @@ h1, p{
     /* background-color: red; */
     animation-name: example;
     animation-duration: 10s;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .para1 {
+      background-image: url('./assets/imgs/mobile/blackbuck-resize.png');
+    }
+    .linkcontainer{
+        flex-wrap: wrap;
+    }
   }
