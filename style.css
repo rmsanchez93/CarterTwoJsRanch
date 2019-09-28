@@ -9,7 +9,7 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 
 
@@ -40,7 +40,7 @@ h1, p{
 
 #about{
     background-color: black;
-    background-image: url("./assets/image.png");    
+    background-image: url("./assets/imgs/image.png");    
 
 
 }
@@ -168,15 +168,17 @@ h1, p{
 }
 
 .container{
-    background-color: #faebd7;
+    /* background-color: #faebd7; */
+    color: white;
     display: inline-block;
     padding: 5%;
-    width: 50%;
+    /* width is fugly, gotta go */
+    /* width: 50%; */
     height: 50%;
     margin-top:10%;
     position: relative;
     
-    background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
+    /* background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url("https://www.transparenttextures.com/patterns/purty-wood.png"); */
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
@@ -231,10 +233,19 @@ h1, p{
   }
 
   @media only screen and (max-width: 600px) {
+      html, body{
+        overflow-x: hidden; 
+      }
+      .headline-container{
+        font-size: 48px;
+      }
     .para1 {
       background-image: url('./assets/imgs/mobile/blackbuck-resize.png');
     }
     .linkcontainer{
         flex-wrap: wrap;
+    }
+    .linkto{
+        white-space: pre;
     }
   }
