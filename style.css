@@ -173,7 +173,7 @@ h1, p{
     display: inline-block;
     padding: 5%;
     /* width is fugly, gotta go */
-    /* width: 50%; */
+    width: 50%;
     height: 50%;
     margin-top:10%;
     position: relative;
@@ -247,5 +247,14 @@ h1, p{
     }
     .linkto{
         white-space: pre;
+    }
+    .social-container{
+        margin-top: 10px;
+        display: inline-flex;
+        background-color: rgb(0,0,0,0.3);
+        padding: 15px;
+    }
+    .container{
+        width: auto;
     }
   }
