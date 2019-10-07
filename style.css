@@ -182,6 +182,11 @@ h1, p{
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
+.price-table{
+    padding: 20px;
+    margin-top: 10%;
+}
+
 
 @keyframes fadein {
     from { opacity: 0; }
