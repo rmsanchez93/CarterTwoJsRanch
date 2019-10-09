@@ -1,0 +1,40 @@
+body{
+    height: 100vh;
+    /* display: flex; */
+    padding: 20px;
+    text-align: center;
+    background-image: url('../imgs/carterspictures/murashkame-cBw5Fis0sw8-unsplash.jpg');
+    /* background-size: auto; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.images{
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+    and if we allow the items to wrap 
+    * Remember this is the same as:
+    * flex-direction: row;
+    * flex-wrap: wrap;
+    */
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content: space-around;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.single-image{
+    background-color: rgba(0,0,0, 0.54);
+    /* margin: 5px; */
+    margin-top: 5px
+ 
+}
