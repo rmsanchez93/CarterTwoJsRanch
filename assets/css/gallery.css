@@ -40,7 +40,7 @@ img{
 }
 
 @media only screen and (max-width: 600px) {
-    .images{
+    /* .images{
         display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
@@ -50,5 +50,16 @@ img{
     .s-image{
         width: 100%;
         height: auto;
+    } */
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .single-image {
+        width: 100%;
+        height: auto;
+        flex: 0 1 calc(50% - 1em);
     }
 }
