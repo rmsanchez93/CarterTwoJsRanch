@@ -11,30 +11,44 @@ body{
     background-size: cover;
     
 }
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.s-image{
+    /* height : 'auto'; */
+    width : '40%';
+}
 
 .images{
-    /* We first create a flex layout context */
     display: flex;
-    
-    /* Then we define the flow direction 
-    and if we allow the items to wrap 
-    * Remember this is the same as:
-    * flex-direction: row;
-    * flex-wrap: wrap;
-    */
-    flex-flow: row wrap;
+   flex-wrap: wrap;
+   justify-content: space-between;
     
     /* Then we define how is distributed the remaining space */
-    justify-content: space-around;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    height: 90vh;
+   
+    /* height: 90vh; */
 }
 
 .single-image{
     background-color: rgba(0,0,0, 0.54);
     /* margin: 5px; */
-    margin-top: 5px
+    /* margin-top: 5px */
+    flex: 0 1 24%;
  
+}
+
+@media only screen and (max-width: 600px) {
+    .images{
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       width: 100%;
+    }
+
+    .s-image{
+        width: 100%;
+        height: auto;
+    }
 }
