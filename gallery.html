@@ -7,7 +7,8 @@
     <title>Gallery</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/gallery.css">
-
+    <link rel="stylesheet" href="./assets/css/gallerybox.css">
+    
 
 </head>
 <body>
@@ -15,41 +16,41 @@
         <h1>This is the Gallery</h1>
         <div class="images">
             <!-- this is examples -->
-            <div class="single-image">
+            <div id='1' class="single-image" onclick="imclicked(1)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2158.JPG'>
             </div>
-            <div class="single-image">
+            <div  id='2' class="single-image" onclick="imclicked(2)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2164.JPG'>
             </div>
-            <div class="single-image">
+            <div  id='3' class="single-image" onclick="imclicked(3)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2170.JPG'>
             </div>
-            <div class="single-image">
+            <div  id='4' class="single-image" onclick="imclicked(4)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2181.JPG'>
             </div>
-            <div class="single-image">
+            <div  id='5' class="single-image" onclick="imclicked(5)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2186.JPG'>
             </div>
-            <div class="single-image">
+            <div  id='6' class="single-image" onclick="imclicked(6)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2193.JPG'>
             </div>
             <!-- this is examples -->
-            <div class="single-image">
+            <div id='7' class="single-image" onclick="imclicked(7)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2158.JPG'>
             </div>
-            <div class="single-image">
+            <div id='8' class="single-image" onclick="imclicked(8)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2164.JPG'>
             </div>
-            <div class="single-image">
+            <div id='9' class="single-image" onclick="imclicked(9)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2170.JPG'>
             </div>
-            <div class="single-image">
+            <div id='10' class="single-image" onclick="imclicked(10)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2181.JPG'>
             </div>
-            <div class="single-image">
+            <div id='11' class="single-image" onclick="imclicked(11)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2186.JPG'>
             </div>
-            <div class="single-image">
+            <div id='12' class="single-image" onclick="imclicked(12)">
                 <img class='s-image'src='./assets/imgs/carterspictures/IMG_2193.JPG'>
             </div>
             <!-- this is examples -->
@@ -113,6 +114,69 @@
         </div>
 
     </div>
-    
+    <script>
+        function imclicked(id){
+            console.log('this was body', document.body)
+            document.body.style.background = 'none'
+            document.body.style.backgroundColor = 'black'
+            img = document.getElementById(`${id}`)
+            console.log(img.children[0].src)
+            imgLink = img.children[0].src
+
+            newDiv = document.createElement('div')
+            cont = document.createElement('div')
+            newImg = document.createElement('img')
+            darkBlock = document.createElement('div')
+            rightClick = document.createElement('div')
+            rightClick.className = 'right'
+            rightClick.addEventListener('click', ()=>{
+                moveRight(id, darkBlock)
+            }) 
+            leftClick = document.createElement('div')
+            leftClick.className = 'left'
+            leftClick.addEventListener('click', ()=>{
+                moveLeft(id,darkBlock)
+            }) 
+            darkBlock.className = 'bodyClicked'
+            newImg.src = imgLink
+            cont.append(leftClick, newImg, rightClick)
+            cont.className = 'containerGallery clearFix'
+            newDiv.append(cont)
+            newDiv.className = 'test'
+            darkBlock.append(newDiv)
+            console.log('what is this? ', darkBlock)
+            
+            img.className = 'test'
+            body = document.getElementsByTagName('body')[0]
+            // console.log(body)
+            // body.className = 'bodyClicked'
+            imgCont = document.getElementsByClassName('gallery-container')[0]
+            // console.log(imgCont)
+            imgCont.style.display = 'none'
+            body.append(darkBlock)
+
+
+            
+
+
+        }
+
+        moveRight = (id, div)=>{
+            div.innerHTML = ''
+            imclicked(id+1)
+
+        }
+        moveLeft = (id, div)=>{
+            div.innerHTML = ''
+            if(id -1 == 0){
+                imclicked(id)
+            }
+            else{
+            imclicked(id-1)
+
+            }
+
+        }
+    </script>
 </body>
 </html>
